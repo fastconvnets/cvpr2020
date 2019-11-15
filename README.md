@@ -16,6 +16,12 @@ output channels in the inner loop.  Produces a KxK output.
 
 # TF-Lite Models
 
+The MobileNetV1 models have a block size of 4 in the last block, otherwise they are unstructured.
+
+The MobileNetV2 models have a block size of 2 from block 11 onwards, otherwise they are unstructured.  The exception is the width 1.8, 80% sparse model which unstructured throughout.
+
+The final fully connected layer is dense in all models.
+
 | Model | Top-1 Accuracy | Sparsity | Download |
 |-------|----------------|----------|----------|
 | MobileNetV1 .75  | 64.4% | 90% | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv1_.75_12_90_64.4.tflite)
