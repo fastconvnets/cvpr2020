@@ -1,5 +1,18 @@
 # cvpr2020
-Code for "Fast Sparse ConvNets" CVPR2020 submissions
+This directory contains all of the ARM computational kernels used the paper "Fast
+Sparse ConvNets" submitted to CVPR 2020.
+
+spmm-NxM-[scalar,neonfma].c - Sparse Matrix Multiplication with an unroll of N
+in the HW dimension and a block size of M in the channel output dimension.
+
+dwconv-KxKsSpP-[scalar,neonfma].c - Depthwise Convolution with a filter of KxK,
+a stride of S and symmetric padding of P.
+
+gavgpool-[scalar,neon]-xN.c - Global average pooling unrolled over N rows.
+
+conv-3x3s2p1c3x4-[scalar,neonfma]-KxK - Full 3x3 stride 2 convolution with
+HWC input and CHW output.  Operates on 3 input channels (only supported) and 4
+output channels in the inner loop.  Produces a KxK output.
 
 # TF-Lite Models
 
