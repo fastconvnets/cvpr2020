@@ -22,6 +22,8 @@ The MobileNetV2 models have a block size of 2 from block 11 onwards, otherwise t
 
 The first full convolution and the final fully connected layer are both dense in all models.
 
+EfficientNet models are fully unstructured and the final fully connected layer is sparse.
+
 | Model | Top-1 Accuracy | Sparsity | Latency (ms) SD 835 | Download |
 |-------|:----------------:|:----------:|:---------------------:|:----------:|
 | MobileNetV1 .75  | 64.4% | 90% | 21 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv1_.75_12_90_64.4.tflite)
