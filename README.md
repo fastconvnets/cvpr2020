@@ -34,4 +34,4 @@ The first full convolution and the final fully connected layer are both dense in
 | MobileNetV2 1.8  | 74.9% | 80% | 102 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv2_1.8_x_80_74.9.tflite)
 | MobileNetV2 2.0  | 74.5% | 85% | 93 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/mbv2_2.0_11-16b2_85_74_5.tflite)
 | EfficientNet B1  | 76.7% | 85% | 110 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/en_b1_x_85_76.7.tflite)
-| EfficientNet B0  | 75.0% | 80% | 80 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/en_b0_x_80_75_0.tflite)
+| EfficientNet B0  | 75.1% | 80% | 80 | [link](https://storage.googleapis.com/fast-convnets/tflite-models/en_b0_x_80_75_1.tflite)
